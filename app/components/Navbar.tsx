@@ -12,7 +12,9 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
-
+  const closeMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
   return (
     <nav className="bg-black text-white shadow-lg">
       <div className="max-w-7xl mx-auto ">
@@ -35,6 +37,7 @@ const Navbar = () => {
             } sm:w-auto w-full bg-black z-10  flex sm:flex-row flex-col gap-4 sm:p-0 p-5  transition-all duration-300 ease-in sm:h-auto h-screen`}
           >
             <Link
+              onClick={closeMenu}
               href={"/"}
               className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
             >
@@ -42,6 +45,7 @@ const Navbar = () => {
             </Link>
 
             <Link
+              onClick={closeMenu}
               href="/about"
               className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
             >
@@ -49,6 +53,7 @@ const Navbar = () => {
             </Link>
 
             <Link
+              onClick={closeMenu}
               href="/blog"
               className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
             >
@@ -57,6 +62,7 @@ const Navbar = () => {
 
             <Link
               href="/contact"
+              onClick={closeMenu}
               className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
             >
               Contact
@@ -66,10 +72,11 @@ const Navbar = () => {
               (isSignedIn ? (
                 <UserButton />
               ) : (
-                <Link href="/sign-in"   className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium border">
-              
-                    Sign in
-              
+                <Link
+                  href="/sign-in"
+                  className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium border"
+                >
+                  Sign in
                 </Link>
               ))}
           </div>

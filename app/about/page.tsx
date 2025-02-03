@@ -6,9 +6,6 @@ import HeroSec from "../components/ui/HeroSec";
 const About = () => {
   return (
     <section className="max-w-7xl mx-auto relative">
-
-      <div className="bg-white bg-opacity-70 absolute top-0 left-0 h-screen w-full"></div>
-
       <HeroSec
         imageSrc="/about-bg.jpg"
         heading="Discover Our Story"
