@@ -5,7 +5,7 @@ import { FaEnvelope, FaPhoneAlt, FaLocationArrow } from "react-icons/fa";
 import HeroSec from "../components/ui/HeroSec";
 
 const ContactPage: NextPage = () => {
-  const buttonRef = useRef<HTMLButtonElement | null>(null);
+  const buttonRef = useRef<HTMLDivElement | null>(null);
   const handleScroll = () => {
     if (buttonRef.current) {
       buttonRef.current.scrollIntoView({ behavior: "smooth" });
