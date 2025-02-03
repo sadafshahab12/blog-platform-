@@ -1,12 +1,14 @@
+"use client";
+import { useRef } from "react";
 import CreateBlog from "./components/CreateBlog";
 import Hero from "./components/Hero";
-import 'react-quill/dist/quill.snow.css';
 
 export default function Home() {
+  const buttonRef = useRef<HTMLButtonElement | null>(null);
   return (
-<>
-<Hero/>
-<CreateBlog/>
-</>
+    <>
+      <Hero buttonRef={buttonRef} />
+      <CreateBlog buttonRef={buttonRef} />
+    </>
   );
 }

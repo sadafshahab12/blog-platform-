@@ -6,7 +6,7 @@ import { useState } from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
 
 const Navbar = () => {
-  const { user, isSignedIn, isLoaded } = useUser();
+  const { isSignedIn, isLoaded } = useUser();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -49,7 +49,7 @@ const Navbar = () => {
             </Link>
 
             <Link
-              href="/blogs"
+              href="/blog"
               className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
             >
               Blogs
