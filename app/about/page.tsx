@@ -23,10 +23,10 @@ const About = () => {
       {/* Mission Section */}
       <div className="grid sm:grid-cols-2 grid-cols-1 gap-12 mb-16 md:max-w-5xl sm:max-w-6xl mx-auto">
         <div>
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4 p-5">
             Our Mission
           </h2>
-          <p className="text-[16px] text-gray-600">
+          <p className="text-[16px] text-gray-600 p-5">
             At PostHive, we believe that everyone has a story to tell. We aim to
             create a user-friendly platform that empowers individuals to express
             themselves and share their thoughts with the world. Whether {`you're`}
@@ -35,10 +35,10 @@ const About = () => {
           </p>
         </div>
         <div>
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4 p-5">
             Why Choose Us?
           </h2>
-          <p className="text-[16px] text-gray-600">
+          <p className="text-[16px] text-gray-600 p-5">
             We focus on building a community of like-minded individuals who are
             passionate about discovering and sharing insightful content.
             PostHive is more than just a blogging platform; {`it's`} a space where
@@ -51,7 +51,7 @@ const About = () => {
       {/* Features Section */}
       <div className="text-center mb-16">
         <h2 className="text-3xl font-semibold text-gray-800 mb-8">Features</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
           <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
             <FaUsers className="text-teal-600 text-4xl mb-4 mx-auto" />
             <h3 className="text-2xl font-semibold text-gray-800 mb-2">
