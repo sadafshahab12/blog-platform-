@@ -1,5 +1,5 @@
 "use client";
-import { UserButton, useUser } from "@clerk/nextjs";
+import { SignedIn, SignInButton, UserButton, useUser } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -72,12 +72,11 @@ const Navbar = () => {
               (isSignedIn ? (
                 <UserButton />
               ) : (
-                <Link
-                  href="/sign-in"
-                  className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium border"
-                >
-                  Sign in
-                </Link>
+                <SignInButton mode="modal">
+                  <button className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium border">
+                    Signin
+                  </button>
+                </SignInButton>
               ))}
           </div>
 
