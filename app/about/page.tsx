@@ -115,7 +115,7 @@ const About = () => {
           </div>
           <div className="text-center">
             <Image
-              src="https://as1.ftcdn.net/v2/jpg/02/76/18/18/1000_F_276181825_vGSOaQQXr2GFFDJhv95LkOR6WO9hX6WI.jpg"
+              src="https://images.pexels.com/photos/2955376/pexels-photo-2955376.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
               width={500}
               height={500}
               alt="Team Member 3"
